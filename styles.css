@@ -1,0 +1,261 @@
+/* Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f5f7fa;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+.flyer-container {
+    width: 100%;
+    max-width: 900px;
+    background: white;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+/* Logo Space - New Section */
+.logo-space {
+    padding: 30px;
+    text-align: center;
+}
+
+
+
+.logo-placeholder {
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #2b5876;
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+.logo-placeholder img{
+    height: 100px;
+ 
+}
+
+
+/* Header Styles */
+.flyer-header { 
+    background-image: url(img/bg.jpg);
+    background-size:     cover;                     
+    background-repeat:   no-repeat;
+    background-position: center center;
+    color: white;
+    padding: 20px 30px;
+    text-align: center;
+}
+
+.flyer-header h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 3.5rem;
+    font-weight: 700;
+    margin-bottom: 5px;
+    letter-spacing: 1px;
+}
+
+.flyer-header h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2rem;
+    font-weight: 400;
+    margin-bottom: 10px;
+}
+
+.date-venue {
+    font-size: 1.2rem;
+    opacity: 0.9;
+}
+
+/* Main Content Styles */
+.flyer-content {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 30px;
+}
+
+.left-section, .right-section {
+    flex: 1;
+    min-width: 300px;
+    padding: 15px;
+}
+
+.highlight-box {
+    background-color: #f8f9fa;
+    border-left: 4px solid #4e4376;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 0 5px 5px 0;
+}
+
+.highlight-box h3 {
+    color: #03143f;
+    margin-bottom: 15px;
+    font-size: 1.3rem;
+}
+
+.highlight-box ul {
+    list-style-type: none;
+}
+
+.highlight-box li {
+    padding: 8px 0;
+    border-bottom: 1px solid #e9ecef;
+}
+
+.highlight-box li:last-child {
+    border-bottom: none;
+}
+
+/* Right Section Styles */
+.cta-box {
+    background: linear-gradient(135deg, #69c8ff 0%, #bc454b 100%);
+    color: white;
+    padding: 25px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.cta-box h3 {
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+}
+
+.cta-box p {
+    margin-bottom: 20px;
+    font-size: 1.1rem;
+}
+
+.pricing {
+    display: flex;
+    justify-content: space-around;
+    margin: 25px 0;
+}
+
+.price-tier {
+    display: flex;
+    flex-direction: column;
+}
+
+.price {
+    font-size: 2.2rem;
+    font-weight: 700;
+}
+
+.tier {
+    font-size: 0.9rem;
+    opacity: 0.8;
+}
+
+.register-btn {
+    background-color: #f98a5d;
+    color: white;
+    border: none;
+    padding: 12px 30px;
+    font-size: 1.1rem;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-weight: 700;
+    margin-top: 10px;
+}
+
+.register-btn:hover {
+    background-color: #ff5252;
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(255, 107, 107, 0.3);
+}
+
+.social-box {
+    text-align: center;
+    padding: 20px;
+    border: 1px solid #e9ecef;
+    border-radius: 5px;
+}
+
+.social-box h3 {
+    color: #03143f;
+    margin-bottom: 15px;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 15px;
+}
+
+.icon {
+    width: 40px;
+    height: 40px;
+    background-color: #03143f;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    font-weight: bold;
+}
+
+.social-box p {
+    color: #4e4376;
+    font-weight: bold;
+}
+
+/* Footer Styles */
+.flyer-footer {
+    background-color: #03143f;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    font-size: 0.9rem;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .flyer-header h1 {
+        font-size: 2.5rem;
+    }
+    
+    .flyer-header h2 {
+        font-size: 1.5rem;
+    }
+    
+    .date-venue {
+        font-size: 1rem;
+    }
+    
+    .left-section, .right-section {
+        flex: 100%;
+    }
+    
+    .pricing {
+        flex-direction: column;
+        gap: 15px;
+    }
+}
+
+@media (max-width: 480px) {
+    .flyer-header {
+        padding: 25px 15px;
+    }
+    
+    .flyer-header h1 {
+        font-size: 2rem;
+    }
+    
+    .flyer-content {
+        padding: 15px;
+    }
+}
